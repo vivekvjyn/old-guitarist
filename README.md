@@ -85,7 +85,6 @@ Temporal \space resolution = \frac{1}{\Delta t}
 \end{align*}
 $$
 
-### Stability condition
 The stability analysis of finite difference schemes when applied to the numerical solution of partial differential equations is intricately tied to the Courant–Friedrichs–Lewy (CFL) condition, expressed as:
 
 $$
@@ -98,14 +97,10 @@ $$
 Spatial \space resolution \leq Temporal \space resolution \times \sqrt{\frac{\mu}{T}}
 $$
 
-### Convolution with Impulse Response
-
 &nbsp;&nbsp;&nbsp;&nbsp; $y^{t}$ is sampled for $x \in (0, l)$. The tone will vary with respect to x. Additionally, an impulse response of a guitar body is convoluted with $y$ to introduce body resonance.
-
-**Impulse response:** [Source](https://ccrma.stanford.edu/~jiffer8/420/project.html)
-
-&nbsp;&nbsp;&nbsp;&nbsp;Instead of multiplication ($YH$) in frequency domain, same result can be achieved by convolution ($y*h$) in time domain. The formula for convolution is given as:
 
 $$
 (y * h)(t) = \int_{-\infty}^{\infty} x(\tau) h(t - \tau) \, d\tau
 $$
+
+**Impulse response:** [Source](https://ccrma.stanford.edu/~jiffer8/420/project.html)
